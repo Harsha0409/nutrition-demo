@@ -1,0 +1,55 @@
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq {
+    background-color: #f0f7e5;
+    border: 1px solid #cde2bb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .faq-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .faq-toggle {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  /* Remove the middle line when active */
+  .faq.active .faq-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .faq-content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #cde2bb; /* This line can be removed when active */
+  }
+  
+  .faq-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  /* Ensure the faq-content is displayed when the faq is active */
+  .faq.active .faq-content {
+    display: block;
+    border-top: none; /* Remove the top border */
+  }
+  

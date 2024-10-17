@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+
+}
+
+h1 {
+    font-size: 3vmax;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2vmax;
+    line-height: 1.5vmax;
+    
+}
+
+p {
+    font-size: 1.5vmax;
+    line-height: 1.5;
+}
+
+/* 
+body {
+    background-color: #657930;
+} */
+
+nav{
+    height: 14vh;
+    background-color: #12260C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.logo img{
+    height: 15vh;
+    position: relative;
+    top: 1.5vh;
+
+} 
+
+.nav-icons a{
+    color: white;
+    text-decoration: none;
+    margin-left: 4vw;
+    font-size: 1.2vmax;
+}
+.nav-icons ul{
+    display: flex;
+    list-style: none;
+}
+.nav-social-icons{
+    padding-right: 1vw;
+}
+.nav-social-icons i{
+    margin-left: 2vw;
+    font-size: 3.5vh;
+}
+
+main {
+    margin: 5%;
+    
+}
+
+/* about section styles */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-left h1 {
+    margin-bottom: 2%;
+}
+
+/* .about-left p {
+    font-size: 1.5vmax;
+    line-height: 1.5;
+}  */
+
+.about-right{
+    margin: 4%;
+}
+
+.about-right img{
+    height: 30vmax;
+    width: 24vmax;
+}
+
+/* mission & vision styles */
+.mission-vision {
+    margin: 8% 0;
+}
+
+.mission-vision-head {
+    text-align: center;
+}
+
+.mission-vision-head p {
+    margin: 0 24%;
+}
+
+.mission-vision-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding-top: 4%;
+}
+
+.mission, .vision {
+    padding: 5%;
+    background-color: #F2FFF5;
+    border-radius: 10px;
+}
+
+.line {
+    height: 6px;
+    width: 140px;
+    background-color: #2D572C;
+    margin: 4% 0;
+}
+
+.line2 {
+    height: 6px;
+    width: 120px;
+    background-color: #2D572C;
+    margin: 4% 0;
+}
+
+/* why us section styles */
+.why-us-head {
+    text-align: center;
+}
+
+.why-us-head p {
+    margin: 0 24%;
+}
+
+.why-us-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    padding-top: 4%;
+}
+
+.card {
+    padding: 5%;
+    background-color: #F2FFF5;
+    border-radius: 10px;
+}
+
+.card-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 4%;
+}
+
+.card-icon {
+    height: 50px;
+    width: 50px;
+    background-color: #D4FCDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-icon i {
+    font-size: 2vmax;
+}
+
+
+/* question styles */
+.question {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 8% 0;
+    /* justify-content: space-between; */
+}
+
+.question-left{
+    margin: 4%;
+    padding-top: 4%;
+}
+
+.question-left img{
+    height: 30vmax;
+    width: 24vmax;
+}
+
+.question-right h1 {
+    margin-bottom: 4%;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq {
+    background-color: #F2FFF5;
+    border: 1px solid #cde2bb;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .faq-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .faq-toggle {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  /* Remove the middle line when active */
+  .faq.active .faq-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .faq-content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #cde2bb; /* This line can be removed when active */
+  }
+  
+  .faq-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  /* Ensure the faq-content is displayed when the faq is active */
+  .faq.active .faq-content {
+    display: block;
+    border-top: none; /* Remove the top border */
+  }
+  
+
+  /* proof is in progress styles */
+  .proof-progress-section {
+    background-color: #F2FFF5; /* Light greenish color similar to the background */
+    border-radius: 10px;
+    border: 1px solid #cde2bb;
+    padding: 4%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 80%;
+}
+
+.text-content h2 {
+    margin-bottom: 4%;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.demo-button {
+    background-color: #E68A00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2vmax;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+    background-color: #B66200;
+}
+
+/* @media (max-width: 768px) {
+    .proof-progress-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .button-wrapper {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        margin-top: 20px;
+    }
+} */
