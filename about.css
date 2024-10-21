@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Urbanist", sans-serif;
 
 }
 
@@ -22,6 +22,24 @@ p {
     line-height: 1.5;
 }
 
+button {
+    background-color: #E68A00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2vmax;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B66200;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /* 
 body {
     background-color: #657930;
@@ -29,12 +47,14 @@ body {
 
 nav{
     height: 14vh;
-    background-color: #12260C;
+    background-color: #163210;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2vh;
+    position: sticky;
+    top: 0px;
 }
 
 .logo img{
@@ -61,6 +81,7 @@ nav{
     margin-left: 2vw;
     font-size: 3.5vh;
 }
+
 
 main {
     margin: 5%;
@@ -291,20 +312,6 @@ main {
     width: 30%;
 }
 
-.demo-button {
-    background-color: #E68A00;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1.2vmax;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.demo-button:hover {
-    background-color: #B66200;
-}
-
 /* @media (max-width: 768px) {
     .proof-progress-section {
         flex-direction: column;
@@ -319,3 +326,65 @@ main {
         margin-top: 20px;
     }
 } */
+
+/* /footer styling/ */
+footer{
+    background-color: #163210;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+}
+.footer-logo{
+    width: 20vw;
+}
+.footer-logo img{
+    margin-top: 10%;
+}
+.footer-info{
+    width: 80vw;
+}
+.footer-nav ul{
+    display: flex;
+}
+.footer-nav li{
+    list-style: none;
+    font-size: 1.2vmax;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+.footer-contact{
+    display: flex;
+    align-items: center;
+    background-color: #2D572C;
+    padding: 1%;
+    margin-top: 3%;
+    border: 1px solid #326932;
+    border-radius: 5px;
+}
+.footer-contact p{
+    color: white;
+    font-size: 1vmax;
+}
+.rights{
+    margin-left: 30%;
+}
+.footer-btn{
+    width: 40%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.footer-btn button {
+    display: flex;
+    gap: 10px;
+    background-color: #2D572C;
+    color: white;
+    border: 1px solid #326932;
+    border-radius: 8px;
+    padding: 1%;
+}
+
